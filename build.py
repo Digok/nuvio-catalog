@@ -275,6 +275,21 @@ def write_site(rows):
     }
     with open(os.path.join(tmp, "manifest.json"), "w", encoding="utf-8") as f:
         json.dump(manifest, f, ensure_ascii=False, indent=1)
+    # Smaller addons for apps that cap rows per addon: install only the packs you want.
+    packs = {
+        "essentials": ("Rodrigo's Catalog: Essentials", lambda cid: not cid.startswith(("movies_", "series_"))),
+        "genres": ("Rodrigo's Catalog: Genres", lambda cid: cid.startswith(("movies_", "series_")) and not cid[7:9].isdigit()),
+        "decades": ("Rodrigo's Catalog: Decades", lambda cid: cid.startswith("movies_") and cid[7:9].isdigit()),
+    }
+    for key, (pname, keep) in packs.items():
+        sub = [r for r in rows if keep(r[0])]
+        for cid, name, typ, _ in sub:
+            os.makedirs(os.path.join(tmp, key, "catalog", typ), exist_ok=True)
+            shutil.copy(os.path.join(tmp, "catalog", typ, cid + ".json"), os.path.join(tmp, key, "catalog", typ, cid + ".json"))
+        pm = dict(manifest, id=f"{manifest['id']}.{key}", name=pname,
+                  catalogs=[{"type": typ, "id": cid, "name": name} for cid, name, typ, _ in sub])
+        with open(os.path.join(tmp, key, "manifest.json"), "w", encoding="utf-8") as f:
+            json.dump(pm, f, ensure_ascii=False, indent=1)
     open(os.path.join(tmp, ".nojekyll"), "w").close()
     git = os.path.join(SITE, ".git")
     if os.path.isdir(git):

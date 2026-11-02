@@ -1,0 +1,172 @@
+{
+ "id": "com.digok.nuvio.catalog.genres",
+ "version": "1.20261102.2217",
+ "name": "Rodrigo's Catalog: Genres",
+ "description": "Trending, all-time greats by genre and decade, Oscar winners, Marvel, anime, Brazilian cinema, finance and medical dramas. Metadata only (IMDb, Cinemeta, Wikidata).",
+ "resources": [
+  "catalog"
+ ],
+ "types": [
+  "movie",
+  "series"
+ ],
+ "idPrefixes": [
+  "tt"
+ ],
+ "catalogs": [
+  {
+   "type": "movie",
+   "id": "movies_action",
+   "name": "Best Action Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_adventure",
+   "name": "Best Adventure Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_animation",
+   "name": "Best Animation Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_comedy",
+   "name": "Best Comedy Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_crime",
+   "name": "Best Crime Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_documentary",
+   "name": "Best Documentary Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_drama",
+   "name": "Best Drama Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_family",
+   "name": "Best Family Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_fantasy",
+   "name": "Best Fantasy Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_horror",
+   "name": "Best Horror Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_mystery",
+   "name": "Best Mystery Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_romance",
+   "name": "Best Romance Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_scifi",
+   "name": "Best Sci-Fi Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_thriller",
+   "name": "Best Thriller Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_war",
+   "name": "Best War Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_western",
+   "name": "Best Western Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_biography",
+   "name": "Best Biography Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_history",
+   "name": "Best History Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_sport",
+   "name": "Best Sport Movies"
+  },
+  {
+   "type": "movie",
+   "id": "movies_musical",
+   "name": "Best Musical Movies"
+  },
+  {
+   "type": "series",
+   "id": "series_drama",
+   "name": "Best Drama Series"
+  },
+  {
+   "type": "series",
+   "id": "series_comedy",
+   "name": "Best Comedy Series"
+  },
+  {
+   "type": "series",
+   "id": "series_crime",
+   "name": "Best Crime Series"
+  },
+  {
+   "type": "series",
+   "id": "series_scifi",
+   "name": "Best Sci-Fi Series"
+  },
+  {
+   "type": "series",
+   "id": "series_animation",
+   "name": "Best Animation Series"
+  },
+  {
+   "type": "series",
+   "id": "series_documentary",
+   "name": "Best Documentary Series"
+  },
+  {
+   "type": "series",
+   "id": "series_thriller",
+   "name": "Best Thriller Series"
+  },
+  {
+   "type": "series",
+   "id": "series_action",
+   "name": "Best Action Series"
+  },
+  {
+   "type": "series",
+   "id": "series_fantasy",
+   "name": "Best Fantasy Series"
+  },
+  {
+   "type": "series",
+   "id": "series_mystery",
+   "name": "Best Mystery Series"
+  }
+ ],
+ "behaviorHints": {
+  "configurable": false,
+  "configurationRequired": false
+ }
+}

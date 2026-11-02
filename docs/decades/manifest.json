@@ -1,0 +1,57 @@
+{
+ "id": "com.digok.nuvio.catalog.decades",
+ "version": "1.20261102.2217",
+ "name": "Rodrigo's Catalog: Decades",
+ "description": "Trending, all-time greats by genre and decade, Oscar winners, Marvel, anime, Brazilian cinema, finance and medical dramas. Metadata only (IMDb, Cinemeta, Wikidata).",
+ "resources": [
+  "catalog"
+ ],
+ "types": [
+  "movie",
+  "series"
+ ],
+ "idPrefixes": [
+  "tt"
+ ],
+ "catalogs": [
+  {
+   "type": "movie",
+   "id": "movies_1960s",
+   "name": "Best Movies of the 1960s"
+  },
+  {
+   "type": "movie",
+   "id": "movies_1970s",
+   "name": "Best Movies of the 1970s"
+  },
+  {
+   "type": "movie",
+   "id": "movies_1980s",
+   "name": "Best Movies of the 1980s"
+  },
+  {
+   "type": "movie",
+   "id": "movies_1990s",
+   "name": "Best Movies of the 1990s"
+  },
+  {
+   "type": "movie",
+   "id": "movies_2000s",
+   "name": "Best Movies of the 2000s"
+  },
+  {
+   "type": "movie",
+   "id": "movies_2010s",
+   "name": "Best Movies of the 2010s"
+  },
+  {
+   "type": "movie",
+   "id": "movies_2020s",
+   "name": "Best Movies of the 2020s"
+  }
+ ],
+ "behaviorHints": {
+  "configurable": false,
+  "configurationRequired": false
+ }
+}

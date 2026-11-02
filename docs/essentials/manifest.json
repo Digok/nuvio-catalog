@@ -1,0 +1,102 @@
+{
+ "id": "com.digok.nuvio.catalog.essentials",
+ "version": "1.20261102.2217",
+ "name": "Rodrigo's Catalog: Essentials",
+ "description": "Trending, all-time greats by genre and decade, Oscar winners, Marvel, anime, Brazilian cinema, finance and medical dramas. Metadata only (IMDb, Cinemeta, Wikidata).",
+ "resources": [
+  "catalog"
+ ],
+ "types": [
+  "movie",
+  "series"
+ ],
+ "idPrefixes": [
+  "tt"
+ ],
+ "catalogs": [
+  {
+   "type": "movie",
+   "id": "trending_movies",
+   "name": "Trending Movies"
+  },
+  {
+   "type": "series",
+   "id": "trending_series",
+   "name": "Trending Series"
+  },
+  {
+   "type": "movie",
+   "id": "new_movies",
+   "name": "New & Noteworthy Movies"
+  },
+  {
+   "type": "series",
+   "id": "medical_series",
+   "name": "Watch with Lara: Medical Dramas"
+  },
+  {
+   "type": "movie",
+   "id": "top_movies",
+   "name": "Top Rated Movies of All Time"
+  },
+  {
+   "type": "series",
+   "id": "top_series",
+   "name": "Top Rated Series of All Time"
+  },
+  {
+   "type": "movie",
+   "id": "most_watched",
+   "name": "Most Popular Movies Ever"
+  },
+  {
+   "type": "movie",
+   "id": "oscar_best_picture",
+   "name": "Oscar Best Picture Winners"
+  },
+  {
+   "type": "movie",
+   "id": "mcu_movies",
+   "name": "Marvel Cinematic Universe (in release order)"
+  },
+  {
+   "type": "series",
+   "id": "mcu_series",
+   "name": "Marvel Series"
+  },
+  {
+   "type": "series",
+   "id": "anime_series",
+   "name": "Best Anime Series"
+  },
+  {
+   "type": "movie",
+   "id": "anime_movies",
+   "name": "Best Anime Movies"
+  },
+  {
+   "type": "movie",
+   "id": "brazil_movies",
+   "name": "Best Brazilian Movies"
+  },
+  {
+   "type": "series",
+   "id": "brazil_series",
+   "name": "Best Brazilian Series"
+  },
+  {
+   "type": "movie",
+   "id": "finance_movies",
+   "name": "Money, Markets & Wall Street"
+  },
+  {
+   "type": "series",
+   "id": "finance_series",
+   "name": "Money & Business Series"
+  }
+ ],
+ "behaviorHints": {
+  "configurable": false,
+  "configurationRequired": false
+ }
+}
