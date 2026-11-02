@@ -1,6 +1,6 @@
 {
  "id": "com.digok.nuvio.catalog",
- "version": "1.20261102.2158",
+ "version": "1.20261102.2201",
  "name": "Rodrigo's Catalog",
  "description": "Trending, all-time greats by genre and decade, Oscar winners, Marvel, anime, Brazilian cinema, finance and medical dramas. Metadata only (IMDb, Cinemeta, Wikidata).",
  "resources": [
@@ -28,6 +28,11 @@
    "type": "movie",
    "id": "new_movies",
    "name": "New & Noteworthy Movies"
+  },
+  {
+   "type": "series",
+   "id": "medical_series",
+   "name": "Watch with Lara: Medical Dramas"
   },
   {
    "type": "movie",
@@ -273,11 +278,6 @@
    "type": "series",
    "id": "finance_series",
    "name": "Money & Business Series"
-  },
-  {
-   "type": "series",
-   "id": "medical_series",
-   "name": "Medical Dramas"
   }
  ],
  "behaviorHints": {

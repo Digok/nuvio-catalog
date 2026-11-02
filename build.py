@@ -204,6 +204,10 @@ def build():
     recent = [t for t in movies if t["year"] and t["year"] >= this_year - 1 and t["votes"] >= 5000]
     add("new_movies", "New & Noteworthy Movies", "movie", sorted(recent, key=lambda t: t["votes"], reverse=True))
 
+    # Watch with Lara (near the top so it shows on the home screen)
+    med, missing_med = resolve(titles, [(n, y, "series") for n, y in MEDICAL_SERIES], by_name)
+    add("medical_series", "Watch with Lara: Medical Dramas", "series", sorted(med, key=lambda t: t["votes"], reverse=True))
+
     # All-time greats
     add("top_movies", "Top Rated Movies of All Time", "movie", weighted([t for t in movies if t["votes"] >= 100000], 100000))
     add("top_series", "Top Rated Series of All Time", "series", weighted([t for t in series if t["votes"] >= 50000], 50000))
@@ -241,13 +245,11 @@ def build():
     add("brazil_series", "Best Brazilian Series", "series", weighted(br_t, 2000))
 
     # Curated lists
-    missing = {"mcu_series": missing_marvel}
+    missing = {"mcu_series": missing_marvel, "medical_series": missing_med}
     fin_m, missing["finance_movies"] = resolve(titles, [(n, y, "movie") for n, y in FINANCE_MOVIES], by_name)
     add("finance_movies", "Money, Markets & Wall Street", "movie", sorted(fin_m, key=lambda t: t["votes"], reverse=True))
     fin_s, missing["finance_series"] = resolve(titles, [(n, y, "series") for n, y in FINANCE_SERIES], by_name)
     add("finance_series", "Money & Business Series", "series", sorted(fin_s, key=lambda t: t["votes"], reverse=True))
-    med, missing["medical_series"] = resolve(titles, [(n, y, "series") for n, y in MEDICAL_SERIES], by_name)
-    add("medical_series", "Medical Dramas", "series", sorted(med, key=lambda t: t["votes"], reverse=True))
 
     write_site(rows)
     return report, {k: v for k, v in missing.items() if v}
